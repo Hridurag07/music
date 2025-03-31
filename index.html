@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="music-player">
+            <img id="album-art" src="cover.jpg" alt="Album Art">
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist">Artist Name</p>
+            <audio id="audio" src="song.mp3"></audio>
+            
+            <input type="range" id="progress" value="0">
+            
+            <div class="controls">
+                <button onclick="prevSong()">⏮</button>
+                <button onclick="togglePlay()">▶️</button>
+                <button onclick="nextSong()">⏭</button>
+            </div>
+        </div>
+
+        <div class="recommendations">
+            <h3>Recommended Songs</h3>
+            <ul id="recommendation-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
